@@ -9,4 +9,7 @@ fn main() {
     }
 
     println!("The value of x is: {}", x);
+
+    /* Data Types section. 3.2 */
+    let guess: u32 = "42".parse().expect("Not a number!");
 }
