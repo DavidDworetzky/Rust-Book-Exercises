@@ -1,9 +1,6 @@
 fn main() {
-  let mut s = String::from("hello");
+  let s = String::from("hello world");
 
-  change(&mut s);
-}
-
-fn change(some_string: &mut String) {
-  some_string.push_str(", world");
+  let hello = &s[0..5];
+  let world = &s[6..11];
 }
