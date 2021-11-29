@@ -21,4 +21,9 @@ fn main() {
         active: true,
         sign_in_count: 1,
     };
+    //in rust, we can use spread-like syntax to initialize one struct from another
+    let user2 = User {
+        email: String::from("another@example.com");
+        ..user1
+    }
 }
